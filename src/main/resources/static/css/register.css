@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background: linear-gradient(to bottom, #f2fff7, #cfe8db);
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+/* Registration Card */
+.register-card {
+	width: 420px;
+	max-width: 100%;
+	background: white;
+	padding: 35px 30px;
+	border-radius: 18px;
+	box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+	text-align: center;
+}
+
+/* Icon */
+.icon {
+	width: 70px;
+	height: 70px;
+	margin: auto;
+	background: #2d7b53;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 28px;
+	color: white;
+	margin-bottom: 15px;
+}
+
+/* Title */
+.register-card h2 {
+	font-size: 24px;
+	font-weight: 800;
+	color: #222;
+}
+
+.subtitle {
+	font-size: 14px;
+	color: #666;
+	margin-top: 8px;
+	margin-bottom: 22px;
+}
+
+/* Form */
+.form-group {
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+.form-group label {
+	font-size: 14px;
+	font-weight: 700;
+	color: #333;
+	display: block;
+	margin-bottom: 8px;
+}
+
+/* Input Box */
+.input-box {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	border: 1px solid #ddd;
+	padding: 12px 14px;
+	border-radius: 10px;
+	background: #fbfbfb;
+	transition: 0.3s;
+}
+
+.input-box i {
+	font-size: 16px;
+	color: #2d7b53;
+}
+
+.input-box input {
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	background: transparent;
+}
+
+/* Focus Effect */
+.input-box:focus-within {
+	border-color: #2d7b53;
+	box-shadow: 0px 0px 8px rgba(45, 123, 83, 0.35);
+	background: white;
+}
+
+/* Register Button */
+.register-btn {
+	width: 100%;
+	padding: 13px;
+	border: none;
+	border-radius: 10px;
+	background: #2d7b53;
+	color: white;
+	font-size: 15px;
+	font-weight: 700;
+	cursor: pointer;
+	margin-top: 8px;
+	transition: 0.3s;
+}
+
+.register-btn i {
+	margin-right: 8px;
+}
+
+.register-btn:hover {
+	background: #256544;
+	transform: scale(1.02);
+}
+
+/* Login Link */
+.login-link {
+	margin-top: 18px;
+	font-size: 14px;
+	color: #444;
+}
+
+.login-link a {
+	color: #2d7b53;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.login-link a:hover {
+	text-decoration: underline;
+}
+
+/* Responsive */
+@media ( max-width : 480px) {
+	.register-card {
+		padding: 30px 20px;
+	}
+}

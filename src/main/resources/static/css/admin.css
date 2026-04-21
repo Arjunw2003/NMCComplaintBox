@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f6f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ==============================
+   TOP NAVBAR
+============================== */
+.top-navbar {
+  background: #2c86b8;
+  padding: 10px 20px;
+}
+
+/* Navbar text */
+.top-navbar .navbar-brand {
+  color: white !important;
+  font-weight: bold;
+}
+
+.top-navbar .nav-link {
+  color: white !important;
+}
+
+/* ==============================
+   SIDEBAR
+============================== */
+.sidebar {
+  background: #1f2a33;
+  min-height: 100vh;
+  padding: 15px 10px;
+}
+
+/* Profile box */
+.profile-box {
+  padding: 15px;
+  border-bottom: 1px solid #3a4b57;
+}
+
+.profile-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+/* Sidebar links */
+.sidebar .nav-link {
+  color: #cfd8dc !important;
+  padding: 12px 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: 0.3s;
+  display: block;
+}
+
+.sidebar .nav-link i {
+  margin-right: 10px;
+}
+
+/* Hover effect */
+.sidebar .nav-link:hover {
+  background: #2c86b8;
+  color: white !important;
+}
+
+/* Active link */
+.sidebar .nav-link.active {
+  background: #2c86b8;
+  color: white !important;
+}
+
+/* Dropdown submenu links */
+.sidebar .sub-link {
+  font-size: 14px;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  color: #cfd8dc !important;
+}
+
+.sidebar .sub-link:hover {
+  background: #2c86b8;
+  color: white !important;
+}
+
+/* ==============================
+   CONTENT AREA
+============================== */
+.content-area {
+  background: #f4f6f9;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* ==============================
+   DASHBOARD CARDS
+============================== */
+.dashboard-card {
+  border: none;
+  color: white;
+  border-radius: 5px;
+  min-height: 130px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+.dashboard-card h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.dashboard-card p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Card link */
+.dashboard-card .card-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.dashboard-card .card-link:hover {
+  text-decoration: underline;
+}
+
+/* Card Colors */
+.bg-blue {
+  background: #00a7d0;
+}
+
+.bg-green {
+  background: #00a65a;
+}
+
+.bg-orange {
+  background: #f39c12;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+@media (max-width: 768px) {
+  .sidebar {
+    min-height: auto;
+    height: auto;
+  }
+
+  .content-area {
+    padding: 15px;
+  }
+
+  .dashboard-card h2 {
+    font-size: 30px;
+  }
+}
+
+/* ==============================
+   FOOTER (Optional)
+============================== */
+.footer {
+  background: white;
+  padding: 15px;
+  border-top: 1px solid #ccc;
+}

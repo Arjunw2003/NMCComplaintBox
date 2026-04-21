@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #f2fff7, #cfe8db);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+/* Main Container */
+.main-container {
+  width: 900px;
+  max-width: 100%;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 10px 25px 10px;
+}
+
+/* Hero Text */
+.hero-text {
+  width: 55%;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #1e3b2c;
+  line-height: 1.2;
+}
+
+.hero-text h1 span {
+  color: #2d7b53;
+}
+
+.hero-text p {
+  margin-top: 12px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4c6658;
+  width: 90%;
+}
+
+/* Hero Image */
+.hero-image {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: white;
+  padding: 12px;
+  border: 5px solid rgba(45, 123, 83, 0.25);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Login Card */
+.login-card {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  background: white;
+  border-radius: 20px;
+  padding: 35px 50px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* User Icon */
+.user-icon {
+  width: 55px;
+  height: 55px;
+  margin: auto;
+  background: #e9f6ef;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: #2d7b53;
+  margin-bottom: 12px;
+}
+
+/* Title */
+.login-card h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  color: #222;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-size: 15px;
+  font-weight: 700;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Input Box */
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ddd;
+  padding: 14px 15px;
+  border-radius: 10px;
+  background: #fbfbfb;
+}
+
+.input-box i {
+  color: #666;
+  font-size: 16px;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  background: transparent;
+}
+
+/* Forgot Password inside password box */
+.forgot-link {
+  font-size: 13px;
+  color: #2d7b53;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Login Button */
+.login-btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #2d7b53;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn i {
+  margin-right: 8px;
+}
+
+.login-btn:hover {
+  background: #256544;
+}
+
+/* Divider */
+.divider {
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
+}
+
+.divider span {
+  background: white;
+  padding: 0px 15px;
+  font-size: 14px;
+  color: #777;
+  font-weight: 600;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #ddd;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+/* Register Text */
+.register-text {
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+}
+
+.register-text a {
+  color: #2d7b53;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .login-card {
+    padding: 30px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+}
