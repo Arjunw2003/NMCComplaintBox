@@ -24,52 +24,23 @@
 					<div class="dropdown-menu">
 
 
-						<a href="sanitationDepart" target="_self"><i class="fa-solid fa-broom"></i>
-							Sanitation Department</a> <a href="publicHealthDepart"
-							target="_self"><i class="fa-solid fa-heart-pulse"></i> Public
-							Health Department</a> <a href="/Complain?dept=SolidWaste"
-							target="_self"><i class="fa-solid fa-recycle"></i> Solid
-							Waste Management</a> <a href="/Complain?dept=WaterSupply"
-							target="_self"><i class="fa-solid fa-water"></i> Water Supply</a>
-						<a href="/Complain?dept=SewerageDrainage" target="_self"><i
-							class="fa-solid fa-toilet"></i> Sewerage & Drainage</a> <a
-							href="/Complain?dept=Electricity" target="_self"><i
+						<a href="sanitationDepart" target="_self"><i
+							class="fa-solid fa-broom"></i> Sanitation Department</a> <a
+							href="watersupplyDepart" target="_self"><i
+							class="fa-solid fa-water"></i> Water Supply</a> <a
+							href="electricityDepart" target="_self"><i
 							class="fa-solid fa-bolt"></i> Electricity</a> <a
-							href="/Complain?dept=RoadMaintenance" target="_self"><i
+							href="roadmaintenanceDepart" target="_self"><i
 							class="fa-solid fa-road"></i> Road Maintenance</a> <a
-							href="/Complain?dept=StreetLight" target="_self"><i
-							class="fa-solid fa-lightbulb"></i> Street Light</a> <a
-							href="/Complain?dept=ParksGarden" target="_self"><i
-							class="fa-solid fa-tree"></i> Parks & Garden</a> <a
-							href="/Complain?dept=AnimalControl" target="_self"><i
-							class="fa-solid fa-dog"></i> Animal Control</a> <a
-							href="/Complain?dept=Construction" target="_self"><i
-							class="fa-solid fa-building"></i> Construction</a> <a
-							href="/Complain?dept=Transport" target="_self"><i
-							class="fa-solid fa-bus"></i> Transport</a> <a
-							href="/Complain?dept=FireEmergency" target="_self"><i
-							class="fa-solid fa-fire"></i> Fire & Emergency</a> <a
-							href="/Complain?dept=MunicipalCorp" target="_self"><i
-							class="fa-solid fa-city"></i> Municipal Corp</a> <a
-							href="/Complain?dept=CleanlinessUnit" target="_self"><i
-							class="fa-solid fa-bullseye"></i> Cleanliness Unit</a> <a
-							href="/Complain?dept=ToiletMaintenance" target="_self"><i
-							class="fa-solid fa-restroom"></i> Toilet Maintenance</a> <a
-							href="/Complain?dept=GarbageCollection" target="_self"><i
-							class="fa-solid fa-trash"></i> Garbage Collection</a> <a
-							href="/Complain?dept=EnvironmentProtection" target="_self"><i
-							class="fa-solid fa-leaf"></i> Environment Protection</a> <a
-							href="/Complain?dept=PollutionControl" target="_self"><i
-							class="fa-solid fa-smog"></i> Pollution Control</a> <a
-							href="/Complain?dept=DisasterManagement" target="_self"><i
-							class="fa-solid fa-house-flood-water"></i> Disaster Management</a>
+							href="pollutioncontrolDepart" target="_self"><i
+							class="fa-solid fa-smog"></i> Pollution Control</a>
 
 					</div>
 				</div>
 
-				<a href="track" class="nav-item"><span>STATUS</span></a> <a
-					href="#" class="nav-item"><span>NOTIFICATION</span></a> <a
-					href="/profile" class="nav-item"><span>PROFILE</span></a>
+				<a href="track" class="nav-item"><span>STATUS</span></a> <a href="#"
+					class="nav-item"><span>NOTIFICATION</span></a> <a href="/profile"
+					class="nav-item"><span>PROFILE</span></a>
 			</nav>
 		</div>
 

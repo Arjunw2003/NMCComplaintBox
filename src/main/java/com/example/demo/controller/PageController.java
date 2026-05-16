@@ -26,6 +26,16 @@ public class PageController {
 		return "home";
 	}
 
+	@GetMapping("/watersupplyDepart")
+	public String watersupply() {
+		return "watersupplyDepart";
+	}
+	
+	@GetMapping("/electricityDepart")
+	public String electricityDepart() {
+		return "electricityDepart";
+	}
+	
 	@GetMapping("/sanitationDepart")
 	public String saniDepart() {
 		return "sanitationDepart";
@@ -35,6 +45,17 @@ public class PageController {
 	public String publicDepart() {
 		return "publicHealthDepart";
 	}
+	
+	@GetMapping("roadmaintenanceDepart")
+	public String roadmaintenanceDepart() {
+		return "roadmaintenanceDepart";
+	}
+	
+	@GetMapping("pollutioncontrolDepart")
+	public String pollutioncontrolDepart() {
+		return "pollutioncontrolDepart";
+	}
+	
 	@GetMapping("/track")
 	public String trackPage() {
 		return "track";
@@ -43,5 +64,36 @@ public class PageController {
 	@GetMapping("/adminDashbord")
 	public String ShowAdminPage() {
 		return "adminDashbord";
+	}
+	@GetMapping("/Sidebar")
+	public String Side() {
+		return "Sidebar";
+	}
+	@GetMapping("/navbar")
+	public String nav() {
+		return "navbar";
+	}
+	@GetMapping("/department")
+	public String dep() {
+		return "department";
+	}
+	@GetMapping("/report")
+	public String rep() {
+		return "report";
+	}
+	
+	@GetMapping("/allcomplaints")
+	public String allcomp() {
+		return "allcomplaints";
+	}
+	
+	@GetMapping("/deptwise")
+	public String deptwise() {
+		return "deptwise";
+	}
+	
+	@GetMapping("/updateStatus")
+	public String updateStatus() {
+		return "updateStatus";
 	}
 }

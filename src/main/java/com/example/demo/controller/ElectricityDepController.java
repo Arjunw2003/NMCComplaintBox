@@ -3,23 +3,25 @@ package com.example.demo.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.dto.ApiResponse;
-import com.example.demo.dto.SanitationDeComDto;
-import com.example.demo.model.SanitationDeCom;
-import com.example.demo.service.ComplaintBoxService;
+import com.example.demo.dto.ElectricityDepDto;
+import com.example.demo.model.ElectricityDep;
+import com.example.demo.service.ElectricityDepService;
 
 @RestController
-@RequestMapping("/api/complaint")
-public class ComplaintBoxController {
+@RequestMapping("/api/electricity")
+public class ElectricityDepController {
 
 	@Autowired
-	private ComplaintBoxService complaintboxservice;
-
-	@PostMapping("/sanitationDepSave")
+	private ElectricityDepService electricityDepService;
+	
+	@PostMapping("/electricityCompSave")
 	public ResponseEntity<?> saveComplaint(
 			@RequestParam("fullName") String fullName,
 			@RequestParam("mobileNo") String mobileNo, 
@@ -31,16 +33,16 @@ public class ComplaintBoxController {
 		try {
 
 			// DTO mapping
-			SanitationDeComDto sanitationdto = new SanitationDeComDto();
-			sanitationdto.setFullName(fullName);
-			sanitationdto.setMobileNo(mobileNo);
-			sanitationdto.setComplaintDate(complaintDate);
-			sanitationdto.setLocation(location);
-			sanitationdto.setDescription(description);
-			sanitationdto.setImagePath(imagePath);
+			ElectricityDepDto elcElectricityDepDto = new ElectricityDepDto();
+			elcElectricityDepDto.setFullName(fullName);
+			elcElectricityDepDto.setMobileNo(mobileNo);
+			elcElectricityDepDto.setComplaintDate(complaintDate);
+			elcElectricityDepDto.setLocation(location);
+			elcElectricityDepDto.setDescription(description);
+			elcElectricityDepDto.setImagePath(imagePath);
 
 			// Service call
-			SanitationDeCom saved = complaintboxservice.saveSaniTationComplaint(sanitationdto);
+			ElectricityDep saved = electricityDepService.saveElectricityDepat(elcElectricityDepDto);
 
 			// Success Response
 			return ResponseEntity.ok().body(new ApiResponse(HttpStatus.OK, "Complaint Submitted Successfully", saved));

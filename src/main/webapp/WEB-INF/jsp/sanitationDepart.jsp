@@ -25,7 +25,7 @@
 
 			<!-- Left Section -->
 			<div class="left-panel">
-				<h1>ComplainBox</h1>
+				<h1>Sanitation Complain</h1>
 				<p>Register your complaint easily with proof image. Upload photo
 					using camera and submit instantly.</p>
 

@@ -1,5 +1,4 @@
 function submitComplaint() {
-	alert("Arjun");
 
 	var fullName = $("#fullName").val().trim();
 	var mobileNo = $("#mobileNo").val().trim();

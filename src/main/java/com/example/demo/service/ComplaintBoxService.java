@@ -41,7 +41,8 @@ public class ComplaintBoxService {
 			sanitationdecom.setLocation(sanitationdto.getLocation());
 			sanitationdecom.setDescription(sanitationdto.getDescription());
 			sanitationdecom.setCreatedAt(LocalDateTime.now());
-
+			sanitationdecom.setStatus("Pending");
+			
 			// ---------- Image Uploaded ------------
 			if (sanitationdto.getImagePath() != null && !sanitationdto.getImagePath().isEmpty()) {
 

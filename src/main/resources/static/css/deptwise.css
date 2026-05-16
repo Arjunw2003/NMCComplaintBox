@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+
+body {
+	background: #f4f6f9;
+}
+
+/* ===================== NAVBAR FIX ===================== */
+.top-navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	background: #2e86b7;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	z-index: 9999;
+}
+
+.top-navbar h2 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+/* ===================== PROFILE DROPDOWN ===================== */
+.profile-area {
+	position: relative;
+}
+
+.profile-btn {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	padding: 6px 12px;
+	border-radius: 6px;
+	transition: 0.3s;
+}
+
+.profile-btn:hover {
+	background: rgba(255, 255, 255, 0.15);
+}
+
+.profile-img {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+
+.profile-name {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.profile-dropdown-menu {
+	display: none;
+	position: absolute;
+	top: 55px;
+	right: 0;
+	width: 180px;
+	background: white;
+	border-radius: 8px;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	z-index: 2000;
+}
+
+.profile-dropdown-menu a {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 15px;
+	text-decoration: none;
+	font-size: 14px;
+	color: #222;
+	transition: 0.2s;
+}
+
+.profile-dropdown-menu a:hover {
+	background: #f2f2f2;
+}
+
+/* ===================== LAYOUT FIX ===================== */
+.container {
+	display: flex;
+	margin-top: 60px;
+}
+
+/* ===================== SIDEBAR FIX ===================== */
+.sidebar {
+	width: 260px;
+	height: calc(100vh - 60px);
+	background: #1f2a33;
+	color: white;
+	position: fixed;
+	top: 60px;
+	left: 0;
+	overflow-y: auto;
+	padding-top: 20px;
+}
+
+.menu {
+	padding: 10px 0;
+}
+
+.menu a {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 18px;
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.menu a:hover {
+	background: #2e86b7;
+}
+
+.menu .menu-text {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+/* Dropdown */
+.dropdown-menu {
+	display: none;
+	background: #24323d;
+	padding-bottom: 5px;
+}
+
+.dropdown-menu a {
+	padding: 10px 45px;
+	font-size: 13px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	white-space: nowrap;
+	justify-content: flex-start;
+}
+
+/* ===================== CONTENT FIX ===================== */
+.content {
+	margin-left: 260px;
+	flex: 1;
+	padding: 25px;
+	overflow-y: auto;
+	background: #f4f6f9;
+	min-height: calc(100vh - 60px);
+}
+
+.content h2 {
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+/* =================Container ====================*/
+.filter-container {
+	width: 300px;
+	margin-bottom: 20px;
+}
+
+/* Label */
+.filter-container label {
+	font-weight: 600;
+	margin-bottom: 6px;
+	display: block;
+	color: #333;
+}
+
+/* Custom Select Wrapper */
+.custom-select {
+	position: relative;
+}
+
+/* Select Box */
+.custom-select select {
+	width: 100%;
+	padding: 12px 40px 12px 15px;
+	border-radius: 12px;
+	border: none;
+	font-size: 15px;
+	background: linear-gradient(135deg, #ffffff, #f3f3f3);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	outline: none;
+	transition: all 0.3s ease;
+	appearance: none;
+}
+
+/* Hover */
+.custom-select select:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Focus */
+.custom-select select:focus {
+	box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
+}
+
+/* Arrow Icon */
+.custom-select::after {
+	content: "\f078";
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #3498db;
+	pointer-events: none;
+}
+
+/* Mobile */
+@media ( max-width : 600px) {
+	.filter-container {
+		width: 100%;
+	}
+}
+
+/* ===================== TABLE CARD ===================== */
+.table-card {
+	background: white;
+	padding: 20px;
+	border-radius: 12px;
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+	overflow-x: auto;
+}
+
+.table-card h3 {
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	min-width: 1100px;
+}
+
+table th {
+	background: #2e86b7;
+	color: white;
+	padding: 12px;
+	font-size: 14px;
+	text-align: left;
+}
+
+table td {
+	padding: 12px;
+	border-bottom: 1px solid #ddd;
+	font-size: 14px;
+	color: #333;
+	vertical-align: middle;
+}
+
+table tr:hover {
+	background: #f5faff;
+}
+
+.img-preview {
+	width: 60px;
+	height: 60px;
+	border-radius: 8px;
+	object-fit: cover;
+	border: 2px solid #ddd;
+}
+
+.desc {
+	max-width: 250px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

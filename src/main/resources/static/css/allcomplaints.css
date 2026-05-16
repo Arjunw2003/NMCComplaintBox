@@ -1,0 +1,246 @@
+@charset "UTF-8";
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter', sans-serif;
+}
+
+body{
+  background:#f4f6f9;
+}
+
+/* ===================== NAVBAR ===================== */
+.top-navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:60px;
+  background:#2e86b7;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 20px;
+  z-index:9999;
+}
+
+.top-navbar h2{
+  font-size:20px;
+  font-weight:600;
+}
+
+/* Profile Dropdown */
+.profile-area{
+  position:relative;
+}
+
+.profile-btn{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  cursor:pointer;
+  padding:6px 12px;
+  border-radius:6px;
+  transition:0.3s;
+}
+
+.profile-btn:hover{
+  background:rgba(255,255,255,0.15);
+}
+
+.profile-img{
+  width:35px;
+  height:35px;
+  border-radius:50%;
+  border:2px solid white;
+}
+
+.profile-name{
+  font-size:14px;
+  font-weight:500;
+}
+
+.profile-dropdown-menu{
+  display:none;
+  position:absolute;
+  top:55px;
+  right:0;
+  width:180px;
+  background:white;
+  border-radius:8px;
+  box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+  overflow:hidden;
+  z-index:2000;
+}
+
+.profile-dropdown-menu a{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:12px 15px;
+  text-decoration:none;
+  font-size:14px;
+  color:#222;
+  transition:0.2s;
+}
+
+.profile-dropdown-menu a:hover{
+  background:#f2f2f2;
+}
+
+/* ===================== LAYOUT ===================== */
+.container{
+  display:flex;
+  margin-top:60px;
+  height:calc(100vh - 60px);
+}
+
+/* ===================== SIDEBAR ===================== */
+.sidebar{
+  width:260px;
+  background:#1f2a33;
+  color:white;
+  padding-top:20px;
+  height:calc(100vh - 60px);
+}
+
+.menu{
+  padding:10px 0;
+}
+
+.menu a{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:12px 18px;
+  text-decoration:none;
+  color:white;
+  font-size:14px;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+.menu a:hover{
+  background:#2e86b7;
+}
+
+.menu .menu-text{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+/* Dropdown */
+.dropdown-menu{
+  display:none;
+  background:#24323d;
+  padding-bottom:5px;
+}
+
+.dropdown-menu a{
+  padding:10px 45px;
+  font-size:13px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  white-space:nowrap;
+  justify-content:flex-start;
+}
+
+/* ===================== CONTENT ===================== */
+.content{
+  flex:1;
+  padding:25px;
+  overflow-y:auto;
+  background:#f4f6f9;
+}
+
+.content h2{
+  font-size:22px;
+  font-weight:600;
+  margin-bottom:15px;
+}
+
+/* ===================== TABLE UI ===================== */
+.table-card{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0px 4px 12px rgba(0,0,0,0.1);
+  overflow-x:auto;
+}
+
+.table-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:15px;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.table-header h3{
+  font-size:16px;
+  font-weight:600;
+}
+
+.search-box{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#f4f6f9;
+  padding:10px 15px;
+  border-radius:10px;
+  width:320px;
+}
+
+.search-box input{
+  border:none;
+  outline:none;
+  background:transparent;
+  width:100%;
+  font-size:14px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  min-width:1000px;
+}
+
+table th{
+  background:#2e86b7;
+  color:white;
+  padding:12px;
+  font-size:14px;
+  text-align:left;
+}
+
+table td{
+  padding:12px;
+  border-bottom:1px solid #ddd;
+  font-size:14px;
+  color:#333;
+  vertical-align:middle;
+}
+
+table tr:hover{
+  background:#f5faff;
+}
+
+.img-preview{
+  width:60px;
+  height:60px;
+  border-radius:8px;
+  object-fit:cover;
+  border:2px solid #ddd;
+}
+
+.desc{
+  max-width:250px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}

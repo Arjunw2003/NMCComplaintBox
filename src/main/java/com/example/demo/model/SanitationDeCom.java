@@ -26,6 +26,7 @@ public class SanitationDeCom {
 	private String description;
 
 	private String imagePath;
+	private String status;
 	private LocalDateTime createdAt;
 
 	public Long getId() {
@@ -90,6 +91,14 @@ public class SanitationDeCom {
 
 	public void setImagePath(String imagePath) {
 		this.imagePath = imagePath;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
 	}
 
 	public LocalDateTime getCreatedAt() {

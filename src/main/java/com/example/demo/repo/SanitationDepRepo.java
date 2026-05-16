@@ -10,4 +10,6 @@ public interface SanitationDepRepo extends JpaRepository<SanitationDeCom, Long> 
 
 	boolean existsByComplaintId(String complaintId);
 
+	SanitationDeCom findByComplaintId(String complaintId);
+
 }

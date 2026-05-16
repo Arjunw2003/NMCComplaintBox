@@ -12,6 +12,7 @@ public class SanitationDeComDto {
 	private String description;
 
 	private MultipartFile imagePath;
+	private String status;
 
 	public Long getId() {
 		return id;
@@ -68,4 +69,14 @@ public class SanitationDeComDto {
 	public void setImagePath(MultipartFile imagePath) {
 		this.imagePath = imagePath;
 	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	
+	
 }
